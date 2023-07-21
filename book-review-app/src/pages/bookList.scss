@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+.booklist {
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__error-message {
+    color: red;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    &__title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    &__detail {
+      margin-bottom: 10px;
+    }
+
+    &__url {
+      margin-bottom: 10px;
+
+      & a {
+        color: blue;
+        text-decoration: none;
+      }
+    }
+
+    &__review {
+      margin-bottom: 10px;
+    }
+
+    &__reviewer {
+      margin-bottom: 10px;
+    }
+
+    // 「詳細」ボタンと「編集」ボタンのスタイルを追加
+    &__button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      color: #fff;
+      background-color: #007bff;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  &__next-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+  }
+}
